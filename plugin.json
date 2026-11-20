@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "linkedin-local",
+  "version": "0.1.0",
+  "description": "Read LinkedIn profile, feed and saved items using the Mac mini's browser session.",
+  "author": {
+    "name": "Dharmesh"
+  },
+  "keywords": [
+    "linkedin",
+    "local",
+    "browser",
+    "read-only"
+  ],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "LinkedIn Local",
+        "shortDescription": "Read LinkedIn on this Mac",
+        "longDescription": "Read your own LinkedIn profile, feed and saved items in local Codex using the browser on this Mac mini. Sign in directly in the browser. This is an agent workflow, not a separate LinkedIn API permission or a technical read-only sandbox.",
+        "developerName": "Dharmesh",
+        "category": "Communication",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Connect to LinkedIn on this Mac and verify read access.",
+          "Read my LinkedIn profile and summarize it.",
+          "Summarize five visible posts from my LinkedIn feed."
+        ],
+        "logo": "./assets/linkedin-local.svg",
+        "composerIcon": "./assets/linkedin-local.svg"
+      }
+    }
+  }
+}

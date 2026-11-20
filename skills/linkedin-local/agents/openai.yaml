@@ -1,0 +1,6 @@
+interface:
+  display_name: "LinkedIn Local"
+  short_description: "Read LinkedIn on the Mac mini"
+  default_prompt: "Connect to my LinkedIn account on this Mac and verify access to my profile, feed and saved items."
+policy:
+  allow_implicit_invocation: true
